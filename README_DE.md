@@ -1,5 +1,7 @@
 # PSE-TivSeg
 
+[中文](https://github.com/ZhouHaojie/PSE-TivSeg/tree/master/README.md) | [German](https://github.com/ZhouHaojie/PSE-TivSeg/tree/master/README_DE.md)
+
 ## Zielbeschreibung
 
 - Das übergeordnete Ziel ist die Objekterkennung und -Verfolgung mit einem TivSeg

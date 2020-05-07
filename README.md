@@ -1,5 +1,7 @@
 # PSE-TivSeg
 
+[中文](https://github.com/ZhouHaojie/PSE-TivSeg/tree/master/README.md) | [German](https://github.com/ZhouHaojie/PSE-TivSeg/tree/master/README_DE.md)
+
 ## 实现目标
 
 - 总体目标是使用TivSeg进行对象检测和跟踪
