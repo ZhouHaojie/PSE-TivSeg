@@ -63,19 +63,35 @@
 
 ## Befehlsspezifikation Fahrbefehle und Konfiguration
 
-- set -l <value>
-  Setzt den Grad der Logging Informationen <value>, welche von der Anwendung ausgegeben werden. 0 = Error, 1 = Warning, 2 = Info, 3 = Debug, 4 = Verbose
-- set -t <value>
-  Setzt die maximale Zeit <value>, die der TivSeg ohne weitere Eingabe fahren darf. Nach dieser Zeit muss ein Nothalt erfolgen.
-- set -d <value> Setzt den angepeilten Abstand <value> zum Marker der automatischen Steuerung. 
-- drive <time> <velocity> <steering>
-  Fahre eine Zeit <time> [0 – max] mit Geschwindigkeit <velocity> [-100; 100] und einer Lenkung <steering> [-100; 100]. Die Lenkung hat einen default Wert von 0, was einer geraden Ausrichtung entspricht.
-- script <file>
-  Führe ein Skript aus <file> aus. Das Skript soll alle vorgestellten Befehle enthalten können. Jeder Befehl blockiert bis er vollständig ausgeführt wurde.
+- set -l \<value>
+
+  > Setzt den Grad der Logging Informationen \<value>, welche von der Anwendung ausgegeben werden. 0 = Error, 1 = Warning, 2 = Info, 3 = Debug, 4 = Verbose
+
+- set -t \<value>
+
+  > Setzt die maximale Zeit \<value>, die der TivSeg ohne weitere Eingabe fahren darf. Nach dieser Zeit muss ein Nothalt erfolgen.
+
+- set -d \<value> 
+
+  > Setzt den angepeilten Abstand \<value> zum Marker der automatischen Steuerung. 
+
+- drive \<time> \<velocity> \<steering>
+
+  > Fahre eine Zeit \<time> [0 – max] mit Geschwindigkeit \<velocity> [-100; 100] und einer Lenkung \<steering> [-100; 100]. Die Lenkung hat einen default Wert von 0, was einer geraden Ausrichtung entspricht.
+
+- script \<file>
+
+  > Führe ein Skript aus \<file> aus. Das Skript soll alle vorgestellten Befehle enthalten können. Jeder Befehl blockiert bis er vollständig ausgeführt wurde.
+
 - STRG + c
-  Bricht die aktuelle Befehlsausführung sofort ab und kehrt in das Terminal zurück. (Hinweis: Funktion signal() )
+
+  > Bricht die aktuelle Befehlsausführung sofort ab und kehrt in das Terminal zurück. (Hinweis: Funktion signal() )
+
 - search Sucht einen Marker in der Umgebung.
-- mode <mode> Setzt den Fahrmodus <mode> [1:automatic; 2:manual]
+
+- mode \<mode> 
+
+  > Setzt den Fahrmodus \<mode> [1:automatic; 2:manual]
 
 ## 实习任务
 
